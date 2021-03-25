@@ -1,0 +1,51 @@
+h2 {
+
+    background-color: silver;
+    color :rgb(160, 121, 49);
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-size: 20pt;
+}
+#grandma {
+    text-align: center;
+    font-size: 22pt;
+}
+body{
+    color: #404040;
+    font-family: Georgia;
+    font-size: 10pt;
+    background-image: url("images/silverware.jpg");
+    background-color: #fff;
+
+}
+pre {
+    font-family: Georgia;
+}
+a{
+    color: #a4a400;
+}
+.liness{
+    text-decoration: underline;
+    font-family: normal;
+}
+strong{
+    font-weight: bold;
+    font-style: normal;
+}
+.one {
+    background-color:#ffffA8;
+    font-style: italic;
+}
+ul{
+    list-style-image: url("images/pie_bullet.png");
+}
+#left{
+    float: right;
+    width: 30%;
+    background: #666;
+    margin-top: 20px;
+    padding: 10px;
+	position:relative;
+	right:1oopx;
+
+}
