@@ -39,10 +39,10 @@ strong{
 ul{
     list-style-image: url("images/pie_bullet.png");
 }
-#left{
+.left{
     float: right;
     width: 30%;
-    background: #666;
+    background: #fff;
     margin-top: 20px;
     padding: 10px;
 	position:relative;
