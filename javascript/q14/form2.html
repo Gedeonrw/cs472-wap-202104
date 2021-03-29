@@ -26,19 +26,19 @@
         <h3>New Product form</h3>
            <div id="one">
            <label class="move">Product Number</label><br>
-           <input type="text" class="move" ><br>
+           <input type="text" class="move" name="number"><br>
            <label for="name" class="move">Name</label><br>
-           <input type="text" class="move" id="name"><br>
+           <input type="text" class="move" name="name"id="name"><br>
            <label for="" class="move">Unit Price</label><br>
-           <input type="number" placeholder="0.0" class="move"><br>
+           <input type="number" placeholder="0.0" name="price" class="move"><br>
         </div>
         <div id="two">
            <label class="move" for="">Quantity in stock</label><br>
-           <input type="number" class="move" placeholder="0"><br>
+           <input type="number" class="move" name="quantity" placeholder="0"><br>
         
         <div id="three">
            <label for="selector" class="move">Supplier</label><br>
-              <select class="supply" id="selector">
+              <select class="supply" id="selector" name="supplier">
                 <option >trellers</option>
                 <option>car</option>
                 <option >house</option>
@@ -47,7 +47,7 @@
             
             <div id="four">
            <label for="" class="move">Date supplied</label><br>
-           <input type="date" class="move"><br>
+           <input type="date" class="move" name="date"><br>
            <small class="move">Enter a valid Date</small><br><br>
            </div>
            <input class="move" type="button" value="Reset">
@@ -57,7 +57,13 @@
         </div>
 
 </form>
-
+<script>
+ var form = document.getElementById("fill-form");
+ form.onsubmit=function(e){
+     e.preventDefault();
+      alert(form.number.value, form.name.value);
+ };
+</script>
 
    
 </body>

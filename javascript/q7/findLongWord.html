@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function findLongWord(str,i){
+        let s = [];
+  for(let j=0; j<str.length;j++){
+      if(str[j].length > i){
+        s.push(str[j]);
+     //s += str[j];
+      } 
+  }
+  return s;
+    }
+    let st = ["us", "chin", "mongolia","kenya","belgium"];
+    console.log(findLongWord(st,4));
+</script>
+<body>
+    
+</body>
+</html>

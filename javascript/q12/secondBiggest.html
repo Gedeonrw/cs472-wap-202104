@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second Biggest</title>
+</head>
+<script>
+    function findSecondBiggest(a){
+        let biggest = a[0] > a[1] ? a [0] : a[1];
+        let seconBiggest = biggest == a[0] ? a[1] : a[0];
+     for(let i=2; i<a.length; i++){
+         if(a[i] > biggest){
+             seconBiggest = biggest;
+             biggest=a[i];
+         }
+         if(a[i] > seconBiggest){
+            a[i]=seconBiggest;
+         }
+     }
+     return seconBiggest;
+    }
+    let nums = [1,4,5,7,5,2,9];
+    console.log(findSecondBiggest(nums));
+</script>
+<body>
+    
+    
+</body>
+</html>
