@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fibbonacci numbers</title>
     <script>
-        function fibonacci(n,a,b)
+/*        function fibonacci(n,a,b)
 {
  
  var sum;
@@ -22,7 +22,31 @@
  
  }
  
+}*/
+function printFibo(n,a,b){
+if(n==0) return "";
 }
+if(n==1) {
+    console.log(`${a}`);
+    }
+else if(n==2){
+    console.log(`${a}, ${b}`);
+}
+
+else{
+    let seq = `${a}, ${b}`;
+
+    let seq = `${a}, ${b}`;
+    let nextA = a;
+    let nextB = b;
+    for(let i=0; i< n-2; i++){
+        let nextVal = nextA + nextB;
+        NextA = nextB;
+        nextB = nextVal;
+        seq += `, ${nextVal}`;
+    }
+}
+printFibo(6,0,1);
  
 console.log(fibonacci(12,0 , 1));
     </script>

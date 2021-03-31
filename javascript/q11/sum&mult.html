@@ -17,11 +17,27 @@ let summ = (accum, current) => {return accum + current};
 let val = ar.reduce(summ);
 return val;  
 }
+/*
+
+function sum(ar){
+    return ar.reduce((acc, n) => acc+n)
+}
+let n = [1,2,3,4,5];
+console.log(sum(n));
+*/
 
 function multiply(ar){
 let mult = (accum, current) => {return accum * current};
 let val = ar.reduce(mult);
-return val;  
+return val; 
+/*
+function multi(ar){
+    if(ar.length < 1) throw new error('Invalid input')
+    return ar.reduce((acc, n) => acc*n,1);
+}
+let n = [1,2,3,4,5];
+console.log(sum(n));
+*/ 
 } 
 
 let n = [1,2,3,4,5];

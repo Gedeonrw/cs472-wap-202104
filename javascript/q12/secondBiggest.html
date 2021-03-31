@@ -8,6 +8,9 @@
 </head>
 <script>
     function findSecondBiggest(a){
+        if(a.length < 2){
+            throw new Error('Invalid Array, Must have atleast more than two numbers')
+        }
         let biggest = a[0] > a[1] ? a [0] : a[1];
         let seconBiggest = biggest == a[0] ? a[1] : a[0];
      for(let i=2; i<a.length; i++){

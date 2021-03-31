@@ -11,8 +11,8 @@
     <header>
         <nav class="nav-bar">
             <a class="nav-n" href="#">MUM Golden Dome Market::: SRM System</a>
-            <a class="nav-n"href="#">| Products</a>
-            <a class="nav-n"href="#">| Suppliers</a>
+            <a class="nav-n"href="#"> | Products</a>
+            <a class="nav-n"href="#"> | Suppliers</a>
             <div class="nav-right">
                 Hello
                 <button>sign-out</button>
@@ -26,19 +26,19 @@
         <h3>New Product form</h3>
            <div id="one">
            <label class="move">Product Number</label><br>
-           <input type="text" class="move" ><br>
+           <input type="text" class="move" name="prod-num" ><br>
            <label for="name" class="move">Name</label><br>
-           <input type="text" class="move" id="name"><br>
+           <input type="text" class="move" name="name"><br>
            <label for="" class="move">Unit Price</label><br>
            <input type="number" placeholder="0.0" class="move"><br>
         </div>
         <div id="two">
            <label class="move" for="">Quantity in stock</label><br>
-           <input type="number" class="move" placeholder="0"><br>
+           <input type="number" class="move" name="qtty" placeholder="0"><br>
         
         <div id="three">
            <label for="selector" class="move">Supplier</label><br>
-              <select class="supply" id="selector">
+              <select class="supply" name="selector">
                 <option >trellers</option>
                 <option>car</option>
                 <option >house</option>
@@ -47,16 +47,17 @@
             
             <div id="four">
            <label for="" class="move">Date supplied</label><br>
-           <input type="date" class="move"><br>
+           <input type="date" class="move" name="sply"><br>
            <small class="move">Enter a valid Date</small><br><br>
            </div>
            <input class="move" type="button" value="Reset">
            <input class="move" type="button" value="Cancel">
-           <input class="move" type="button" value="Add Product">
+           <input class="move" type="button" value="Add Product" id="add-product">
 
         </div>
 
 </form>
+
 
 
    

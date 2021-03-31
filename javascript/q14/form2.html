@@ -21,7 +21,7 @@
         </nav>
     </header>
    
-       <form id="fill-form">
+       <form class="fillform">
            
         <h3>New Product form</h3>
            <div id="one">
@@ -50,19 +50,32 @@
            <input type="date" class="move" name="date"><br>
            <small class="move">Enter a valid Date</small><br><br>
            </div>
-           <input class="move" type="button" value="Reset">
-           <input class="move" type="button" value="Cancel">
+           <!--<input class="move" type="button" value="Reset">
+           <input class="move" type="button" value="Cancel">-->
            <input class="move" type="button" value="Add Product">
 
         </div>
 
 </form>
 <script>
- var form = document.getElementById("fill-form");
- form.onsubmit=function(e){
-     e.preventDefault();
-      alert(form.number.value, form.name.value);
- };
+    const fillform = document.querySelector('.fillform'),
+          form = document.querySelectorAll('.fillform'),
+          submitInput = form[0].querySelector('input[type="button"]');
+
+          function getDataForm(e){
+              e.preventDefault();
+               var formData = new FormData(form[0]);
+               
+              alert(formData.get('number') + '-' + formData.get('name') + '-' +
+              formData.get('price') + '-' + formData.get('quantity') + '-' + formData.get('selector') +'-' +
+              formData.get('supply') +'-' + formData.get('date'));
+          }
+
+          document.addEventListener('DOMContentLoaded', function(){
+           submitInput.addEventListener('click' , getDataForm, false);
+          },false);
+
+
 </script>
 
    

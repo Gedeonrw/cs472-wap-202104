@@ -5,5 +5,7 @@ var newStr = "";
     }
     return newStr;
 }
-var a = "betty";
+var a = "abc sx";
 console.log(reversed(a));
+
+//reverse in-place
